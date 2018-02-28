@@ -37,7 +37,7 @@
                     </div>
                 </div>
             </div>
-            <button onclick="">The Family Blood Line</button>
+            <button onclick="Bloodline()">The Family Blood Line</button>
         </section>
 
         <section id="bb4" class="bigbox">
@@ -83,8 +83,14 @@ function Nightmode(){
         //function 3
 function Bloodline(){
     const doc = document;
-    let section1 = doc.querySelector('bb3');
-
+    let section1 = doc.querySelector('#bb3');
+    let contentgp = doc.querySelector('.contentgp');
+    let gramps = doc.querySelector('#bb3>.contentgp>.p');
+    let pops = doc.querySelector('.c');
+    let bro = doc.querySelector('.c');
+    gramps.style.backgroundColor = 'darkred';
+    pops.style.backgroundColor = 'red';
+    bro.style.backgroundColor = 'lightred';
 }
         //function 4
 
