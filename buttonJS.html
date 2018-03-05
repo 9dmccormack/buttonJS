@@ -52,7 +52,7 @@
                     <li class="fish">blue fish</li>
                 </ul>
             </div>
-            <button onclick="">Technicolor Fish</button>
+            <button onclick="DrSuess()">Technicolor Fish</button>
         </section>
 
         <section id="bb5" class="bigbox">
@@ -83,10 +83,8 @@ function Nightmode(){
         //function 3
 function Bloodline(){
     const doc = document;
-    let section1 = doc.querySelector('#bb3');
-    let contentgp = doc.querySelector('#bb3>.content gp');
-    let gramps = doc.querySelector('#bb3>.content gp>p');
-    let pops = doc.querySelector('#bb3 > .content gp > .p > p');
+    let gramps = doc.querySelector('.gp');
+    let pops = doc.querySelector('.p');
     let bro = doc.querySelectorAll('.c');
     gramps.style.backgroundColor = '#990033';
     pops.style.backgroundColor = '#ffff33';
@@ -94,7 +92,18 @@ function Bloodline(){
     bro[1].style.backgroundColor = '#ff3399'
 }
         //function 4
+        function DrSuess(){
+          const doc = document;
+          let shif = doc.querySelectorAll('.fish');
+          console.log(shif);
+          shif[2].style.color = '#ff0000';
+          shif[3].style.color = '#0000ff';
+        }
 
         //function 5 & 6
+        function NumberCounter() {
+          const doc = document;
+          let navy = doc.querySelector
+        }
     </script>
 </html>
