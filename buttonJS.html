@@ -20,7 +20,7 @@
             <div class="content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <button onclick="">Toggle Day/Night Mode</button>
+            <button onclick="ToggleDayNight()">Toggle Day/Night Mode</button>
         </section>
 
         <section id="bb3" class="bigbox">
@@ -61,8 +61,8 @@
                 <span>20</span>
             </div>
             <br>
-            <button onclick="">+1</button>
-            <button onclick="">+10</button>
+            <button onclick="NumberCounter1()">+1</button>
+            <button onclick="NumberCounter2()">+10</button>
         </section>
     </body>
     <script type="text/javascript">
@@ -78,7 +78,11 @@ function Nightmode(){
     para.style.color = "#ffffff";
 }
         //function 2
-
+function ToggleDayNight(){
+    const doc = document;
+    let section1 = doc.querySelector('#bb2');
+    section1.classList.toggle("Nightmode");
+        }
 
         //function 3
 function Bloodline(){
@@ -86,10 +90,10 @@ function Bloodline(){
     let gramps = doc.querySelector('.gp');
     let pops = doc.querySelector('.p');
     let bro = doc.querySelectorAll('.c');
-    gramps.style.backgroundColor = '#990033';
-    pops.style.backgroundColor = '#ffff33';
-    bro[0].style.backgroundColor = '#ff3399';
-    bro[1].style.backgroundColor = '#ff3399'
+    gramps.style.backgroundColor = '#550000';
+    pops.style.backgroundColor = '#991100';
+    bro[0].style.backgroundColor = '#dd1111';
+    bro[1].style.backgroundColor = '#dd1111'
 }
         //function 4
         function DrSuess(){
@@ -101,9 +105,17 @@ function Bloodline(){
         }
 
         //function 5 & 6
-        function NumberCounter() {
+        function NumberCounter1(){
           const doc = document;
-          let navy = doc.querySelector
-        }
+          let navy = Number(doc.querySelector('span').innerHTML);
+          navy++;
+          doc.querySelector('span').innerHTML = navy;
+      }
+          function NumberCounter2(){
+              const doc = document;
+              let cheese = Number(doc.querySelector('span').innerHTML);
+              cheese = cheese + 10;
+              doc.querySelector('span').innerHTML = cheese;
+          }
     </script>
 </html>

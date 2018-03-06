@@ -31,3 +31,11 @@ button{
     margin:0 auto;
     float: left;
 }
+.Nightmode{
+    background-color: black;
+    color: white;
+}
+.Daymode{
+    background-color: white;
+    color: black;
+}
