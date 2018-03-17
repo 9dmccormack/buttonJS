@@ -63,6 +63,7 @@
             <br>
             <button onclick="NumberCounter1()">+1</button>
             <button onclick="NumberCounter2()">+10</button>
+            <button onclick="NumberCounter3()">+100</button>
         </section>
     </body>
     <script type="text/javascript">
@@ -117,5 +118,13 @@ function Bloodline(){
               cheese = cheese + 10;
               doc.querySelector('span').innerHTML = cheese;
           }
+        function NumberCounter3(){
+            const doc = document;
+            let beef = Number(doc.querySelector('span').innerHTML);
+            cheese = cheese + 10000000;
+            doc.querySelector('span').innerHTML = beef;
+          }
+        
+        }
     </script>
 </html>
